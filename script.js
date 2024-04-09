@@ -22,7 +22,6 @@ function init(){
     playinglistener();
     progresslistener();
     songchanger();
-    document.getElementById('bar')
 }
 
 function playbuttonlistener() {
