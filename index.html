@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css?version=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <audio id="audio" src="babynueva.mp3" hidden ></audio>
+    <div class="videobg"><video autoplay muted loop id="video"><source src="./babynueva.webm" type="video/webm" ></video></div>
+    <div class="player">
+        <div class="artwork"><img src="https://upload.wikimedia.org/wikipedia/en/7/74/Bad_Bunny_-_Nadie_Sabe_Lo_Que_Va_a_Pasar_Ma%C3%B1ana.png" alt="" srcset="" id="artwork"></div>
+        <div class="controls">
+            <div class="progress" id="progresss-bar"><input type="range"class="slider slider-progress" id="bar"></div>
+            <div class="buttons">
+                <div class="title">
+                    <div class="song" id="song">BABY NUEVA</div> 
+                    <div class="artist" id="artist">Bad Bunny</div>
+                </div>
+                <div class="play-pause"><i class="bi bi-rewind-fill" id="back"></i><i class="bi bi-play-fill" id="playpause"></i><i class="bi bi-fast-forward-fill" id="forward"></i></div>
+                <div class="volume"><i class="bi bi-volume-up-fill" id="mutebutton"></i><input type="range" class="slider slider-progress" id="volume"></div>
+            </div>
+        </div>
+    </div>
     
+
+
+
+    <script src="./script.js"></script>
+    <script src="./range-input.js"></script>
+  
 </body>
 </html>

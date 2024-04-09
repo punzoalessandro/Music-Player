@@ -1,0 +1,212 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.player{
+    z-index: 4;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 90%;
+    height: 20%;
+    opacity: 90%;
+}
+
+.artwork{
+    display: flex;
+    height: 50%;
+    width: 5%;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 1rem;
+    opacity: 70%;
+    box-shadow: inset 0px 0px 43px 2px rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+.artwork img{
+    width: 90%;
+    height: 90%;
+    opacity: 100%;
+    border-radius: 1.1rem;
+}
+
+.controls{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.597);
+    border-radius: 5rem;
+    box-shadow: inset 0px 0px 40px 2px rgb(255, 255, 255);
+    margin-top: 1vh;
+    flex-direction: column;
+    align-items: center;
+}
+.videobg{
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+}
+
+.videobg video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.progress{
+    width: 97%;
+    align-self: flex-start;
+    margin-left: 2.5vh;
+}
+
+#bar{
+    width: 99%;
+}
+
+.buttons{
+    display: flex;
+    height: 100%;
+    width: 97%;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+    font-family: 'Helvetica';
+    color: white;
+    flex-direction: column;
+    font-size: 100%;
+}
+
+.song{
+    font-weight: bold;
+}
+
+.bi-play-fill,.bi-pause-fill{
+    margin-right: 1.5vh;
+    margin-left: 1.5vh;
+    color: white !important;
+}
+.bi{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.707);
+    font-size: 2vh;
+}
+.bi:hover{
+    color: white ;
+}
+.volume{
+    display: flex;
+}
+/*generated with Input range slider CSS style generator (version 20211225)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].slider {
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor:pointer;
+    margin-left: 1vh;
+  }
+  
+
+/*progress support*/
+input[type=range].slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(var(--ratio) * 100%);
+  }
+  
+  /*webkit*/
+  input[type=range].slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0.3em;
+    visibility: hidden;
+  }
+  
+  input[type=range].slider::-webkit-slider-runnable-track {
+    height: 0.3em;
+    border: none;
+    border-radius: 0.5em;
+    background: #EEEEEE;
+    box-shadow: none;
+  }
+  
+  input[type=range].slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(#FFFFFF,#FFFFFF) 0/var(--sx) 100% no-repeat, #EEEEEE;
+  }
+  
+  /*mozilla*/
+  input[type=range].slider::-moz-range-thumb {
+    width: 0;
+    height: 0.3em;
+    visibility: hidden;
+  }
+  
+  input[type=range].slider::-moz-range-track {
+    height: 0.3em;
+    border: none;
+    border-radius: 0.5em;
+    background: #EEEEEE;
+    box-shadow: none;
+  }
+  
+  input[type=range].slider.slider-progress::-moz-range-track {
+    background: linear-gradient(#FFFFFF,#FFFFFF) 0/var(--sx) 100% no-repeat, #EEEEEE;
+  }
+  
+  /*ms*/
+  input[type=range].slider::-ms-fill-upper {
+    background: transparent;
+    border-color: transparent;
+  }
+  
+  input[type=range].slider::-ms-fill-lower {
+    background: transparent;
+    border-color: transparent;
+  }
+  
+  input[type=range].slider::-ms-thumb {
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    background: #007cf8;
+    border: none;
+    box-shadow: 0 0 2px black;
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+  
+  input[type=range].slider::-ms-track {
+    height: 0.3em;
+    border-radius: 0.5em;
+    background: #EEEEEE;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+  
+  input[type=range].slider::-ms-thumb:hover {
+    background: #0061c3;
+  }
+  
+  input[type=range].slider::-ms-thumb:active {
+    background: #2f98f9;
+  }
+  
+  input[type=range].slider.slider-progress::-ms-fill-lower {
+    height: 0.3em;
+    border-radius: 0.5em 0 0 0.5em;
+    margin: -undefined 0 -undefined -undefined;
+    background: #FFFFFF;
+    border: none;
+    border-right-width: 0;
+  }
+  
