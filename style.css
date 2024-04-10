@@ -210,3 +210,63 @@ input[type=range].slider.slider-progress {
     border-right-width: 0;
   }
   
+@media screen and (max-width: 1690px) {
+
+.artwork{
+  width: 6%;
+}
+
+.controls{
+  height: 35%;
+}
+
+}
+
+@media screen and (max-width: 1690px) {
+
+  .artwork{
+    width: 7%;
+    height: 51%;
+  }
+  
+  .controls{
+    height: 36%;
+  }
+  
+  .progress{
+    margin-top: 0.2vh;
+    width: 96%;
+  }
+}
+@media screen and (min-width: 1690px) {
+
+  .artwork{
+    width: 6%;
+    height: 51%;
+  }
+  
+  .controls{
+    height: 36%;
+  }
+  
+  .progress{
+    margin-top: 0.2vh;
+    width: 96%;
+  }
+}
+@media screen and (min-width: 2560px) {
+
+  .artwork{
+    width: 6%;
+    height: 51%;
+  }
+  
+  .controls{
+    height: 36%;
+  }
+  
+  .progress{
+    margin-top: 0.2vh;
+    width: 96%;
+  }
+}
