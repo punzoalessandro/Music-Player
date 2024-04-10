@@ -11,10 +11,10 @@ function init(){
     isplaying = false;
     currentsong = 1;
     songs = [
-        {artist:"Bad Bunny", song: "BABY NUEVA", artwork:"https://upload.wikimedia.org/wikipedia/en/7/74/Bad_Bunny_-_Nadie_Sabe_Lo_Que_Va_a_Pasar_Ma%C3%B1ana.png", video:'./babynueva.mp4',audio:'./babynueva.mp3', index: 1 },
+        {artist:"Bad Bunny", song: "BABY NUEVA", artwork:"https://upload.wikimedia.org/wikipedia/en/7/74/Bad_Bunny_-_Nadie_Sabe_Lo_Que_Va_a_Pasar_Ma%C3%B1ana.png", video:'https://site232404.tw.cs.unibo.it/babynueva.mp4',audio:'./babynueva.mp3', index: 1 },
         {artist:"Kid Yugi", song: "GRAMMELOT", artwork:"https://www.bohmagazine.it/wp-content/uploads/kid-yugi-the-globe-cover.jpg", video:'./grammelot.mp4',audio:'./grammelot.mp3', index: 2 },
         {artist:"Ye", song: "BACK TO ME", artwork:"https://ondarock.it/images/cover/vultures_1708529202.jpg", video:'./backtome.webm',audio:'./backtome.mp3', index: 3 },
-        {artist:"Luchetto,Praci", song: "MARACAS", artwork:"https://images.genius.com/314c796f4fc17ddcc0634c4a15abb6f0.1000x1000x1.jpg", video:'./maracas.webm',audio:'./maracas.mp3', index: 4 },
+        {artist:"Luchetto,Praci", song: "MARACAS", artwork:"https://images.genius.com/314c796f4fc17ddcc0634c4a15abb6f0.1000x1000x1.jpg", video:'https://site232404.tw.cs.unibo.it/maracas.mp4',audio:'./maracas.mp3', index: 4 },
     ]
     playbuttonlistener();
     mutebuttonlistener();
